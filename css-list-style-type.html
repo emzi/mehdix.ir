@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="fa">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta name="keywords" content="کامپیوتر، برنامه‌نویسی، پایتون، علم" />
+  <meta name="author" content="Mehdi Sadeghi" />
+  <meta name="copyright" content="Commons Attribution 4.0 International" />
+  <meta name="robot" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="سکوی انتشار مطالبی در مورد دانش تولید نرم‌افزار و ایده‌ها و علایق شخصی‌ام."><title>لیستی با حروف ابجد - مهدی صادقی</title><link rel="stylesheet" href="http://mehdix.ir/assets/css/main.css">
+  <link rel="canonical" href="">
+  <link rel="icon" href="http://mehdix.ir/assets/img/me.png"> 
+</head>
+
+
+<body>
+  <div class="container">
+
+    <header class="site-header">
+  <div class="wrapper">
+    <a class="site-title" href="http://mehdix.ir/">مهدی صادقی</a>
+    <small> در مورد نرم‌افزار و ایده‌هایم </small>
+    <!--nav class="site-nav">
+        <a href="#" class="menu-icon">
+          <svg viewBox="0 0 18 15">
+            <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+            <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+            <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+          </svg>
+        </a>
+        
+        
+        <div class="trigger">
+          <a class="page-link" href="/404.html">خطای ۴۰۴</a>
+        </div>
+      </nav>
+  </div-->
+</header>
+
+
+
+    <section class="content">
+      <div class="page-content">
+        <div class="wrapper"><div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">لیستی با حروف ابجد</h1>
+    <p class="post-meta"><span class="date">چهارشنبه ۲۳ دی ۱۳۹۴</span><!--span></span--></p>
+  </header>
+
+  <article class="post-content">
+    <p>شاید برای شما هم پیش آمده باشد که خواسته باشید لیستی را در وب به سبک و سیاق کشورمان با ارقام فارسی و یا حروف ابجد شماره‌گذاری کنید. در گذشته این کار امکانپذیر نبود. اما خب، امروز هر کار دلمان بخواهد می‌توانیم انجام بدهیم.</p>
+
+<h1 id="استیل-شمارهگذاری">استیل شماره‌گذاری</h1>
+<p>هدف این پست معرفی <a href="http://www.w3.org/TR/css-counter-styles-3/">پیشنهاد جدیدی</a> بنام <code dir="ltr">CSS Counter Styles Level 3</code> است که توسط کنسرسیوم جهانی وب به 3 CSS اضافه شده است. این پیشنهاد همچنان در دست تکمیل است و نسخه‌های مختلف آن را می‌توان در <a href="https://drafts.csswg.org/css-counter-styles-3/">سایت اینترنتی</a> گروه کاری<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> CSS  مشاهده کرد.</p>
+
+<p>در حالت عادی یک لیست مرتب شده<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup> در HTML اینطور تعریف می‌شود:</p>
+
+<pre dir="ltr"><code class="language-html">
+&lt;ol&gt;
+&lt;li&gt;آیتم اول&lt;/li&gt;
+&lt;li&gt;آیتم دوم&lt;/li&gt;
+... الی آخر
+&lt;/ol&gt;
+
+</code></pre>
+
+<p>خروجی پیش‌فرض چنین لیستی چنین خواهد بود:</p>
+
+<ol style="list-style-type:decimal">
+<li>آیتم اول</li>
+<li>آیتم دوم</li>
+<li>سر آیتم
+    <ol style="list-style-type:decimal">
+        <li>زیر آیتم اول</li>
+        <li>زیر آیتم دوم</li>
+    </ol>
+</li>
+</ol>
+
+<p>اولین کاری که دوست داریم بکنیم اینست که ارقام را فارسی کنیم. باید بخاطر داشت که کدهای ارقام فارسی با عربی فرق می‌کند. صفر تا نه را در فارسی اینطور می‌نویسیم: ۰ ۱ ۲ ۳ ۴ ۵ ۶ ۷ ۸ ۹ و در عربی اینطور: ٠ ١ ٢ ٣ ٤ ٥ ٦ ٧ ٨ ٩ (به ارقام چهار و پنج و شش توجه کنید) تفاوت‌های جزئی دیگری هم هست، مثلا در نوشتن کاف (ك) و ی (ي). هنوز هم روزی نیست که نوشتاری نبینم که بی هیچ گونه توجهی به این نکات ظریف، زشت و غلط نوشته و منتشر شده است.</p>
+
+<p>برگردیم سر فارسی سازی خودمان. با ست کردن ‬یک پراپرتی CSS از تگ <code dir="ltr">ol</code> بنام <code dir="ltr">list-style-type</code> می‌توان نحوه شماره‌گذاری لیست را تغییر داد. این پراپرتی چیز جدیدی نیست و در CSS نسخه ۲.۱ ‬‬<a href="http://www.w3.org/TR/CSS2/generate.html#propdef-list-style-type">تعریف شده</a> است و مقادیر مورد قبول آن هم مشخص شده است:</p>
+
+<pre dir="ltr"><code class="language-text">'list-style-type'
+  Value:  	disc | circle | square | decimal | 
+  decimal-leading-zero | lower-roman | upper-roman | 
+  lower-greek | lower-latin | upper-latin | armenian | 
+  georgian | lower-alpha | upper-alpha | none | inherit
+  Initial:  	disc
+  Applies to:  	elements with 'display: list-item'
+  Inherited:  	yes
+  Percentages:  	N/A
+  Media:  	visual
+  Computed value:  	as specified 
+</code></pre>
+
+<p>اما در نسخه سوم CSS طبق توضیحی که در شرح این <a href="https://drafts.csswg.org/css-counter-styles-3">پیش‌نویس</a> آمده است مقادیر جدیدی برای این پراپرتی پذیرفته می‌شود، منجمله <em>persian</em>. بنابراین مقدار این پراپرتی را برابر با <em>persian</em> قرار می‌دهیم تا به نتیجه دلخواه برسیم:</p>
+
+<pre dir="ltr"><code class="language-html">
+&lt;ol style="list-style-type:persian" &gt;
+&lt;li&gt;آیتم اول&lt;/li&gt;
+&lt;li&gt;آیتم دوم&lt;/li&gt;
+&lt;li&gt;سر آیتم
+    &lt;ol style="list-style-type:persian"&gt;
+        &lt;li&gt;زیر آیتم اول&lt;/li&gt;
+        &lt;li&gt;زیر آیتم دوم&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+</code></pre>
+
+<p>حالا خروجی ما به شکل زیر در می‌آید که مطلوب ماست:</p>
+
+<ol style="list-style-type:persian">
+<li>آیتم اول</li>
+<li>آیتم دوم</li>
+<li>سر آیتم
+    <ol style="list-style-type:persian">
+        <li>زیر آیتم اول</li>
+        <li>زیر آیتم دوم</li>
+    </ol>
+</li>
+</ol>
+
+<p>این پراپرتی کاربردهای گسترده‌تری می‌تواند داشته باشد که با مطالعه ‎<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type">مقالات سایت توسعه‌دهندگان موزیلا</a>  می‌توانید با آنها بیشتر آشنا بشوید. در ضمن در همین سایت می‌توانید سایر مقادیر ممکن برای این پراپرتی را ببینید و شاید کارهای جالبی به فکرتان برسد که انجام بدهید.</p>
+
+<h1 id="تعریف-استیلهای-دلخواه">تعریف استیل‌های دلخواه</h1>
+<p>اما این همه‌ی ماجرا نیست. به جز افزوده شدن مقادیر مختلف برای پراپرتی <code dir="ltr">list-style-type</code>، امکان تعریف مقادیر دلخواه هم فراهم شده است. مقدار این پراپرتی می‌تواند یکی از چهار گزینه زیر باشد:</p>
+
+<ol>
+  <li><code dir="ltr">Symbol()</code></li>
+  <li><code dir="ltr">none</code></li>
+  <li><code dir="ltr">&lt;string&gt;</code></li>
+  <li><code dir="ltr">&lt;custom-ident&gt;</code></li>
+</ol>
+
+<p>اولی برای تعریف درون خطی یک مقدار جدید است. دومی یعنی لیست هیچ استیلی نداشته باشد. سومی هم یک رشته دلخواه را برای هر آیتم لیست نمایش می‌دهد. ما با آخری کار داریم. این گزینه یا یکی از شناسه‌های از پیش تعریف شده است که پیش‌تر اشاره کردیم. یا می‌تواند شناسه‌ای باشد که توسط <code dir="ltr">@counter-style rule</code> ‬<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style">تعریف</a> شده باشد. هر <code dir="ltr">counter-style</code> (که از اینجا به بعد استیل شماره‌گذاری می‌خوانیمش) یک نام و تعدادی صفت دارد. به کمک این استیل‌های شماره‌گذاری می‌توانیم هر شکل و شمایلی به شماره‌گذاری لیست‌هایمان بدهیم. موزیلا یک <a href="https://mdn.github.io/css-counter-style-demo/">سایت نمایشی</a> هم دارد که می‌توانید استیل‌های مختلف را تغییر بدهید و هم کد و هم خروجی‌اش را ببینید. روش استاندارد تعریف بدینگونه است:</p>
+
+<pre dir="ltr"><code class="language-text">@counter-style &lt;counter-style-name&gt; {
+  [ system: &lt;counter-system&gt;; ] ||
+  [ symbols: &lt;counter-symbols&gt;; ] ||
+  [ additive-symbols: &lt;additive-symbols&gt;; ] ||
+  [ negative: &lt;negative-symbol&gt;; ] ||
+  [ prefix: &lt;prefix&gt;; ] ||
+  [ suffix: &lt;suffix&gt;; ] ||
+  [ range: &lt;range&gt;; ] ||
+  [ pad: &lt;padding&gt;; ] ||
+  [ speak-as: &lt;speak-as&gt;; ] ||
+  [ fallback: &lt;counter-style-name&gt;; ]
+}
+
+where 
+&lt;counter-style-name&gt; = &lt;custom-ident&gt;
+</code></pre>
+
+<p>ما در ادامه مطلب به همین روش حروف ابجد را تعریف و به عنوان استیل شماره‌گذاری از آن استفاده می‌کنیم. تحمل داشته باشید.</p>
+
+<h1 id="حروف-ابجد">حروف ابجد</h1>
+<p>ویکی‌پدیای فارسی <a href="https://fa.wikipedia.org/wiki/%D8%A7%D8%A8%D8%AC%D8%AF">حروف ابجد</a> را اینطور معرفی می‌کند: «حروف اَبجَد شیوه‌ای برای مرتب‌سازی حروف زبان عربی است که بر پایه الفبای اولیه خط فنیقی مرتب شده‌اند. گاهی این شیوه در شماره‌گذاری موارد یا صفحات به کار می‌رود.»‏‏[^3] امیدوارم که شما از عربی بودن حروف ابجد نترسید! زبانها جزو شگفت‌انگیزترین دستاوردهای انسان هستند. زبانها تنها مدیومی برای انتقال دانش و اطلاعات در بعد مکان و زمان هستند و باید موقع بررسی آنها این نرخ انتقال اطلاعات فاکتور سنجش ما باشد و نه چیز دیگری.</p>
+
+<blockquote>
+  <p>حروف اَبجَد شیوه‌ای برای مرتب‌سازی حروف زبان عربی است که بر پایه الفبای اولیه خط فنیقی مرتب شده‌اند. گاهی این شیوه در شماره‌گذاری موارد یا صفحات به کار می‌رود.‏‏</p>
+</blockquote>
+
+<p>به گفته ویکی‌پدیای فارسی (و انگلیسی) ترتیب حروف ابجد اینگونه است:</p>
+
+<p>الف 	ب 	ج 	د 	ه 	و 	ز 	ح 	ط 	ی 	ک 	ل 	م 	ن 	س 	ع 	ف 	ص 	ق 	ر 	ش 	ت 	ث 	خ 	ذ 	ض 	ظ 	غ</p>
+
+<p>ما هم برای همین ترتیب و با توجه به ارزش عددی هر حرف که در همان مقاله آمده است یک استیل شماره‌گذاری می‌سازیم:</p>
+
+<pre dir="ltr"><code class="language-css">@counter-style abjad {
+  system: additive;
+  range: 1 1000;
+  additive-symbols: 1000 "\63A", 900 "\638", 800 "\636",
+   700 "\630", 600 "\62E", 500 "\62B", 400 "\62A", 300 "\634",
+   200 "\631", 100 "\642", 90 "\635", 80 "\641", 70 "\639",
+    60 "\633", 50 "\646", 40 "\645", 30 "\644",
+   20 "\6AF", 10 "\649", 9 "\637", 8 "\62D", 7 "\698",
+    6 "\648", 5 "\FEEB", 4 "\62F", 3 "\686",
+   2 "\67E", 1 "\627";
+}
+</code></pre>
+
+<p>توجه کنید که بجای خود حروف معادل یونیکد آنها را گذاشته‌ایم. حالا همان لیست اولیه‌مان را با این استیل جدید امتحان می‌کنیم:</p>
+
+<ol style="list-style-type:abjad">
+<li>آیتم اول</li>
+<li>آیتم دوم</li>
+<li>سر آیتم
+    <ol style="list-style-type:abjad">
+        <li>زیر آیتم اول</li>
+        <li>زیر آیتم دوم</li>
+    </ol>
+</li>
+</ol>
+
+<h1 id="حُسن-خِتام">حُسن خِتام</h1>
+<p>حسن ختام این مطلب هم اشاره به علت نوشتن این پست است. من با دوست خوبم ‏<a href="http://luthfi.idris.web.id/">لطفی</a>، که یک وبلاگ‌نویس اندونزیایی است، قرار گذاشته‌ایم که در ماه ژانویه هر هفته یک پست منتشر کنیم. به قولی شده‌ایم <code dir="ltr">Accountability Partner</code> یکدیگر. یعنی جویای وبلاگ نویسی یکدیگر می‌شویم و به همدیگر حساب پس می‌دهیم. ابتدا ترس بود از اینکه چه بنویسیم ولی برای من که این وبسایت خودش مطالب خودش را فراهم می‌کند. می‌شود گفت که روزی‌اش را خودش فراهم می‌کند. هربار که می‌خواهم چیزی بنویسم، کارهایی که برای وبسایت کرده‌ام می‌شود بهانه‌ای برای نوشتن یک پست جدید. از جایی که وبسایت هم فنی است خب من هم تنبلی می‌کنم و همانها را به عنوان مقاله می‌نویسم!</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Working Group <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>Ordered List <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </article>
+  
+
+  <small id="post-tags">
+    
+    <i class="icon-tags"></i>
+    <a rel="tag" href="/tag/%D8%A7%D8%A8%D8%AC%D8%AF.html">ابجد</a> &nbsp;
+    
+    <i class="icon-tags"></i>
+    <a rel="tag" href="/tag/css.html">css</a> &nbsp;
+    
+    <i class="icon-tags"></i>
+    <a rel="tag" href="/tag/list-style-type.html">list-style-type</a> &nbsp;
+    
+    <i class="icon-tags"></i>
+    <a rel="tag" href="/tag/counter-style.html">counter-style</a> &nbsp;
+    
+    <i class="icon-tags"></i>
+    <a rel="tag" href="/tag/%D8%B4%D9%85%D8%A7%D8%B1%D9%87%E2%80%8C%DA%AF%D8%B0%D8%A7%D8%B1%DB%8C.html">شماره‌گذاری</a> &nbsp;
+    
+    <i class="icon-tags"></i>
+    <a rel="tag" href="/tag/%D8%A7%D8%B3%D8%AA%DB%8C%D9%84.html">استیل</a> &nbsp;
+    
+  </small>
+
+  <div style="border-top:1px dotted;">
+    <p>
+      
+      <a href="http://mehdix.ir/irc-with-screen.html" style="float: left"> پروتکل چت اینترنت و اسکرین >> </a>
+      
+
+      
+      <a href="http://mehdix.ir/pagination.html" style="margin-right:0px;">&#60&#60	 صفحه‌بندی در جکیل</a>
+      
+    </p>
+  </div>
+
+  
+    <!-- An element a visitor can click if they <3 comments! -->
+<!--button class="show-comments">نمایش نظرات</button-->
+
+<!-- The empty element required for Disqus to loads comments into -->
+<div id="disqus_thread"></div>
+
+<!--script src="//code.jquery.com/jquery-1.11.3.min.js"></script-->
+<script src="http://mehdix.ir/assets/js/disqus.js"></script>
+
+<noscript> Please enable JavaScript to view disqus comments. </noscript>
+
+  
+
+</div>
+</div>
+      </div>
+    </section><footer class="site-footer">
+
+  <div class="wrapper">
+    <div class="footer-col">
+    <img id="gravatar" class="circle" src="http://mehdix.ir/assets/img/me.png" alt="">
+    </div>
+    <h2 class="footer-heading">معرفی</h2>
+
+    <div class="footer-col-wrapper">
+      <!--div class="footer-col  footer-col-1">
+      <ul class="contact-list">
+      <li>مهدی صادقی</li>
+      <li><a href="mailto:sadeghi@mehdix.org"> تماس</a></li>
+    </ul>
+  </div-->
+
+  <div class="footer-col  footer-col-3">
+
+    <p class="text">بچه که بودیم همیشه برای بازی خونه می‌ساختیم. حالا هم نمونه‌اش رو در وب ساختم. اینجا سکوی انتشار مطالبی در مورد دانش تولید نرم‌افزار و ایده‌ها و علایق شخصی‌ام است، بویژه راه‌حل‌های مهندسی که باعث رشد و پیشرفتم شده است و می‌تواند مورد استفاده دیگران هم قرار بگیرد.
+</p>
+  </div>
+  <div class="footer-col  footer-col-2">
+    <ul class="social-media-list">
+      
+      <li>
+        <a href="https://github.com/mehdisadeghi">
+          <span class="icon  icon--github">
+            <svg viewBox="0 0 16 16">
+              <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+            </svg>
+          </span>
+
+          <span class="username">پروژه‌ها</span>
+        </a>
+      </li>
+      
+
+      
+      <li>
+        <a href="https://twitter.com/mehdisadeghii">
+          <span class="icon  icon--twitter">
+            <svg viewBox="0 0 16 16">
+              <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+              c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+            </svg>
+          </span>
+
+          <span class="username">توئیت‌ها</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://feedburner.google.com/fb/a/mailverify?uri=mehdixir&amp;loc=en_US"><span class="icon icon--feed">
+          <img src="http://mehdix.ir/assets/img/feed_gray_50.png" alt="" />
+        </span><span class="username">خبرنامه</span></a>
+      </li>
+      <li>
+        <a href="http://feeds.feedburner.com/mehdixir"><span class="icon icon--feed">
+          <img src="http://mehdix.ir/assets/img/feed_gray_50.png" alt=""/>
+        </span><span class="username">خوراک</span></a>
+      </li>
+      <li>
+        <span class="icon"><a href="http://validator.w3.org/feed/check.cgi?url=http%3A//mehdix.ir/feed.xml"><img src=http://mehdix.ir/assets/img/valid-atom.png alt="[Valid Atom 1.0]" title="Validate my Atom 1.0 feed" /></a></span>
+        <span class="icon"><a href="https://app.wercker.com/project/bykey/7cdfaf1d4ea865468f4965954ed95247"><img src="https://app.wercker.com/status/7cdfaf1d4ea865468f4965954ed95247/s" alt="Build Status" title="wercker status" /></a>
+        </span>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<div id="license" class="textwidget">
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.fa"><img alt="مجوز کریتیو کامنز" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />
+مطالب این وبلاگ تحت مجوز
+ <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.fa"> 
+کریتیو کامنز اتریبیوشن ۴.۰ اینترنشنال </a>قرار دارد.
+</div>
+
+</div>
+<div  class="center">
+  <small style="color:gray">Site generated on Sun, 01 Oct 2017 23:53:30 +0200</small>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57282325-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</footer>
+</div>
+
+<script src="http://mehdix.ir/assets/js/main.js"></script>
+
+</body>
+
+</html>

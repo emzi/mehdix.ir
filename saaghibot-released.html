@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="fa">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta name="keywords" content="کامپیوتر، برنامه‌نویسی، پایتون، علم" />
+  <meta name="author" content="Mehdi Sadeghi" />
+  <meta name="copyright" content="Commons Attribution 4.0 International" />
+  <meta name="robot" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="سکوی انتشار مطالبی در مورد دانش تولید نرم‌افزار و ایده‌ها و علایق شخصی‌ام."><title>انتشار ساقی‌بات - مهدی صادقی</title><link rel="stylesheet" href="http://mehdix.ir/assets/css/main.css">
+  <link rel="canonical" href="">
+  <link rel="icon" href="http://mehdix.ir/assets/img/me.png"> 
+</head>
+
+
+<body>
+  <div class="container">
+
+    <header class="site-header">
+  <div class="wrapper">
+    <a class="site-title" href="http://mehdix.ir/">مهدی صادقی</a>
+    <small> در مورد نرم‌افزار و ایده‌هایم </small>
+    <!--nav class="site-nav">
+        <a href="#" class="menu-icon">
+          <svg viewBox="0 0 18 15">
+            <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+            <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+            <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+          </svg>
+        </a>
+        
+        
+        <div class="trigger">
+          <a class="page-link" href="/404.html">خطای ۴۰۴</a>
+        </div>
+      </nav>
+  </div-->
+</header>
+
+
+
+    <section class="content">
+      <div class="page-content">
+        <div class="wrapper"><div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">انتشار ساقی‌بات</h1>
+    <p class="post-meta"><span class="date">یک‌شنبه ۱۸ بهمن ۱۳۹۴</span><!--span></span--></p>
+  </header>
+
+  <article class="post-content">
+    <p>بعد از سپری کردن یک آخر هفته پرکار بالاخره اولین ربات تلگرام من آماده شد. <a href="https://telegram.me/SaaghiBot">ساقی‌بات</a> از این لحظه آماده استفاده است.</p>
+
+<h1 id="بات-چیست">بات چیست؟</h1>
+<p>پیام‌رسان تلگرام را احتمالا می‌شناسید، چرا که در ایران کاربران زیادی دارد. در ماه ژوئن سال گذشته میلادی (تقریبا تیرماه) تیم تلگرام <a href="https://telegram.org/blog/bot-revolution">بات</a> را برای اولین بار معرفی کرد. یک بات تلگرام مثل یک اکانت معمولی می‌ماند با اندکی تفاوت. اول اینکه نام (username) همه‌ی بات‌ها به Bot ختم می‌شود. پس می‌شود بسادگی آنها را از سایر حسابهای کاربری تشخیص داد. دیگر اینکه بات نمی‌تواند سرخود به کاربر پیام بدهد بلکه فقط قادر است به پیام‌ها جواب بدهد. بنابراین بات‌ها نمی‌توانند مزاحمتی برای کاربران ایجاد کنند. از جایی که بات هم یک حساب تلگرام است بنابراین می‌تواند مثل سایر حسابها برایش پیام فرستاد. اما پاسخ دادن یا ندادن به پیام بر عهده‌ی خود بات است (همانطور که هر کسی تصمیم می‌گیرد که به پیام ما جواب بدهد یا آنرا ندید بگیرد). هر بات هم تعدادی فرمان دارد که با<code dir="ltr">/</code> شروع می‌شوند. بیشتر بات‌ها فرامین <code dir="ltr">/start</code> و <code dir="ltr">/help</code> را دارند.</p>
+
+<p class="center post-image"><img src="assets/pimg/saaghiabout.jpg" alt="Image not found" /></p>
+
+<h2 id="تعامل-با-بات">تعامل با بات</h2>
+<p>به دو طریق می‌توان با بات تعامل داشت. اول ارسال عادی پیام (یا فرمان) مستقیما به خود بات. دوم صدا زدن یک بات در یک گروه یا گفتگوی ثالث. به این قابلیت بات‌ها <code dir="ltr">Inline Query</code> گفته می‌شود که تیم تلگرام در روز چهارم ژانویه <a href="https://telegram.org/blog/inline-bots">معرفی کرد</a>. در هر گفتگو یا گروهی می‌توان بات را به صورت <code dir="ltr">@BotName</code> یاد کرد (مِنشِن کرد). همچنین همزمان می‌توان پارامترهایی به بات ارسال کرد: <code dir="ltr">@BotName param1 param2 etc.</code>. بات در پاسخ به این درخواست (کوئری) می‌تواند چند نتیجه مثل عکس، لینک، جیف و مانند اینها را در پایین صفحه نمایش لیست کند و کاربر یکی نتیجه را از میان آنها انتخاب می‌کند تا در گفتگوی مربوطه نوشته شود. من از این قابلیت در ساقی‌بات برای نمایش لیستی از رباعیات استفاده کرده‌ام.</p>
+
+<p class="center post-image"><img src="assets/pimg/saaghiquery.jpg" alt="Image not found" /></p>
+
+<h1 id="بات-چطور-کار-میکند">بات چطور کار می‌کند؟</h1>
+<p>یک بات هم شبیه به حساب کاربری یک دوست است. اول اینکه باید نام کاربری‌اش را دانست و بعد می‌توان با بات گفتگو کرد. بات‌ها می‌توانند به پیام‌ها پاسخ بدهند یا یک <code dir="ltr">State Machine</code> پیچیده را پیاده‌سازی کنند. ولی معماری کلی کار بات ساده است. وقتی یک کاربر به یک بات پیامی می‌فرستد، تلگرام یک <code dir="ltr">Update</code> را یا از طریق <code dir="ltr">Polling</code> یا <code dir="ltr">Web Hooks</code> به یک برنامه که جایی روی یک کامپیوتر متصل به اینترنت در حال اجراست ارسال می‌کند. این آپدیت حاوی مشخصات پیام و مشخصات کاربر ارسال کننده پیام است. برنامه‌ی بات هم پس از انجام پردازش‌های لازم پیامی به سرور تلگرام ارسال می‌کند که حاوی توکن و پاسخ است که به نوبه خود پاسخ را تلگرام از آن استخراج کرده و به کاربر می‌فرستد و همینطور الی آخر.</p>
+
+<h1 id="چطور-میشود-یک-بات-ساخت">چطور می‌شود یک بات ساخت؟</h1>
+<p>برای اینکار هم یک بات وجود دارد! تلگرام بسادگی و از طریق <a href="https://telegram.me/BotFather">BotFather</a> امکان ساخت بات جدید را می‌دهد. اگر با این بات چت کنید می‌توانید با ارسال فرمان <code dir="ltr">/newbot</code> و با دادن نام و نام کاربری دلخواه یک بات جدید بسازید. <code dir="ltr">BotFather</code> در عوض به شما یک Token می‌دهد که برای تعامل با بات باید از آن استفاده کرد. یعنی باید با هر درخواست آن را به سرور تلگرام ارسال کرد. تلگرام یک HTTP API فراهم کرده که می‌توان از آن طریق با بات صحبت کرد. ولی نیازی به انجام مسقتیم اینکار نیست چرا که برای زبانهای برنامه‌نویسی مختلف روال‌های سطح پایین نوشته شده‌اند.</p>
+
+<h1 id="ساقیبات-چیست">ساقی‌بات چیست؟</h1>
+<p><a href="http://mehdix.ir/projects/SaaghiBot">ساقی‌بات</a> یک ربات تلگرام است که برای کاربر رباعی خیام می‌فرستد. این کار را به دو طریق انجام می‌دهد. اگر با «ساقی» چت کنید، او در دیتاهای خودش دنبال هر کلمه‌ای که برایش بفرستید می‌گردد و یک رباعی شامل آن کلمه را به عنوان پاسخ می‌فرستد. اگر چند با هم ارسال کنید او دنبال یک رباعی می‌گردد که شامل همه‌ی آن کلمات باشد.</p>
+
+<blockquote>
+  <p>ساقی‌بات یک روبات تلگرام است. اسم خودمانی‌اش ساقی است. کارش هم ارسال رباعی خیام به انتخاب کاربر است.</p>
+</blockquote>
+
+<p>اما ساقی از <code dir="ltr">Inline Query</code> هم پیشتبانی می‌کند که در حقیقت روش بهتر کار با ساقی است. برای اینکار در ورودی تلگرام باید نام ساقی و بعد یک فاصله و بعد کلمات دلخواه را وارد کرد:</p>
+
+<pre dir="ltr"><code class="language-bash">@SaaghiBot می پیاله
+</code></pre>
+
+<h1 id="دادههای-ساقیبات-کجاست">داده‌های ساقی‌بات کجاست؟</h1>
+<p>ساقی بات از فایل <code dir="ltr">YAML</code> <a href="http://mehdix.ir/omar-khayyam-in-yaml-format.html">رباعیات خیام</a> که پیش از این منتشر کرده‌ام استفاده می‌کند. خود ساقی هم یک برنامه‌ی اوپن‌سورس است و با نود نوشته شده است. اطلاعات دیگری هم در <a href="http://mehdix.ir/projects/SaaghiBot">صفحه ویژه پروژه</a> وارد کرده‌ام.</p>
+
+<h1 id="نتیجهگیری">نتیجه‌گیری</h1>
+<p>ساقی یک بات تمرینی است. تلگرام یک پلتفرم اختصاصی است و من علاقه چندانی به کار روی پلتفرم‌های خاص ندارم اما تلگرام میلیون‌ها کاربر در ایران دارد و به همین خاطر مهم است. از طریق بات‌ها می‌توان سرویس‌های زیادی به کاربر عرضه کرد، از یک جستجوگر ساده مثل ساقی گرفته تا رباتی که با شما گیم بازی کند یا مشاوره بدهد یا راه را نشانتان بدهد یا برایتان محصولی سفارش بدهد. خلاصه خیلی ایده‌ها را می‌توان روی آن سوار کرد. امیدوارم که رباتهای جالبی در وب فارسی ببینیم.</p>
+
+<h1 id="دوشنبههای-شاد-آخر-ماه">دوشنبه‌های شاد آخر ماه</h1>
+<p>من از <a href="http://jadi.net/">جادی</a> خواستم که ساقی را در لینک‌های دوشنبه‌های شاد آخر ماه به خوانندگانش معرفی کند. قرار هم گذاشته‌ام که اگر ساقی جواب داد بات دیگری به همین سبک منشر کنم که کار ساده ولی مهمی انجام می‌دهد. بابت معرفی ساقی از او تشکر می‌کنم.</p>
+
+
+  </article>
+  
+
+  <small id="post-tags">
+    
+    <i class="icon-tags"></i>
+    <a rel="tag" href="/tag/%D8%AA%D9%84%DA%AF%D8%B1%D8%A7%D9%85.html">تلگرام</a> &nbsp;
+    
+    <i class="icon-tags"></i>
+    <a rel="tag" href="/tag/%D8%A8%D8%A7%D8%AA.html">بات</a> &nbsp;
+    
+    <i class="icon-tags"></i>
+    <a rel="tag" href="/tag/telegram.html">telegram</a> &nbsp;
+    
+    <i class="icon-tags"></i>
+    <a rel="tag" href="/tag/bot.html">bot</a> &nbsp;
+    
+    <i class="icon-tags"></i>
+    <a rel="tag" href="/tag/%D8%B3%D8%A7%D9%82%DB%8C.html">ساقی</a> &nbsp;
+    
+    <i class="icon-tags"></i>
+    <a rel="tag" href="/tag/saaghibot.html">SaaghiBot</a> &nbsp;
+    
+  </small>
+
+  <div style="border-top:1px dotted;">
+    <p>
+      
+      <a href="http://mehdix.ir/archlinux_installation_with_lucks_and_lvm.html" style="float: left"> نصب قدم به قدم آرچ‌لینوکس با رمزگزاری >> </a>
+      
+
+      
+      <a href="http://mehdix.ir/free-https-for-all.html" style="margin-right:0px;">&#60&#60	 گواهینامه SSL/TLS مجّانی برای همه</a>
+      
+    </p>
+  </div>
+
+  
+    <!-- An element a visitor can click if they <3 comments! -->
+<!--button class="show-comments">نمایش نظرات</button-->
+
+<!-- The empty element required for Disqus to loads comments into -->
+<div id="disqus_thread"></div>
+
+<!--script src="//code.jquery.com/jquery-1.11.3.min.js"></script-->
+<script src="http://mehdix.ir/assets/js/disqus.js"></script>
+
+<noscript> Please enable JavaScript to view disqus comments. </noscript>
+
+  
+
+</div>
+</div>
+      </div>
+    </section><footer class="site-footer">
+
+  <div class="wrapper">
+    <div class="footer-col">
+    <img id="gravatar" class="circle" src="http://mehdix.ir/assets/img/me.png" alt="">
+    </div>
+    <h2 class="footer-heading">معرفی</h2>
+
+    <div class="footer-col-wrapper">
+      <!--div class="footer-col  footer-col-1">
+      <ul class="contact-list">
+      <li>مهدی صادقی</li>
+      <li><a href="mailto:sadeghi@mehdix.org"> تماس</a></li>
+    </ul>
+  </div-->
+
+  <div class="footer-col  footer-col-3">
+
+    <p class="text">بچه که بودیم همیشه برای بازی خونه می‌ساختیم. حالا هم نمونه‌اش رو در وب ساختم. اینجا سکوی انتشار مطالبی در مورد دانش تولید نرم‌افزار و ایده‌ها و علایق شخصی‌ام است، بویژه راه‌حل‌های مهندسی که باعث رشد و پیشرفتم شده است و می‌تواند مورد استفاده دیگران هم قرار بگیرد.
+</p>
+  </div>
+  <div class="footer-col  footer-col-2">
+    <ul class="social-media-list">
+      
+      <li>
+        <a href="https://github.com/mehdisadeghi">
+          <span class="icon  icon--github">
+            <svg viewBox="0 0 16 16">
+              <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+            </svg>
+          </span>
+
+          <span class="username">پروژه‌ها</span>
+        </a>
+      </li>
+      
+
+      
+      <li>
+        <a href="https://twitter.com/mehdisadeghii">
+          <span class="icon  icon--twitter">
+            <svg viewBox="0 0 16 16">
+              <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+              c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+            </svg>
+          </span>
+
+          <span class="username">توئیت‌ها</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://feedburner.google.com/fb/a/mailverify?uri=mehdixir&amp;loc=en_US"><span class="icon icon--feed">
+          <img src="http://mehdix.ir/assets/img/feed_gray_50.png" alt="" />
+        </span><span class="username">خبرنامه</span></a>
+      </li>
+      <li>
+        <a href="http://feeds.feedburner.com/mehdixir"><span class="icon icon--feed">
+          <img src="http://mehdix.ir/assets/img/feed_gray_50.png" alt=""/>
+        </span><span class="username">خوراک</span></a>
+      </li>
+      <li>
+        <span class="icon"><a href="http://validator.w3.org/feed/check.cgi?url=http%3A//mehdix.ir/feed.xml"><img src=http://mehdix.ir/assets/img/valid-atom.png alt="[Valid Atom 1.0]" title="Validate my Atom 1.0 feed" /></a></span>
+        <span class="icon"><a href="https://app.wercker.com/project/bykey/7cdfaf1d4ea865468f4965954ed95247"><img src="https://app.wercker.com/status/7cdfaf1d4ea865468f4965954ed95247/s" alt="Build Status" title="wercker status" /></a>
+        </span>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<div id="license" class="textwidget">
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.fa"><img alt="مجوز کریتیو کامنز" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />
+مطالب این وبلاگ تحت مجوز
+ <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.fa"> 
+کریتیو کامنز اتریبیوشن ۴.۰ اینترنشنال </a>قرار دارد.
+</div>
+
+</div>
+<div  class="center">
+  <small style="color:gray">Site generated on Sun, 01 Oct 2017 23:53:30 +0200</small>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57282325-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</footer>
+</div>
+
+<script src="http://mehdix.ir/assets/js/main.js"></script>
+
+</body>
+
+</html>
